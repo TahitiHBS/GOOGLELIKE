@@ -1,8 +1,9 @@
 
 
+a
 {
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-style: normal;
 }
 
@@ -11,41 +12,103 @@ a:link
   color: black;
   text-decoration: none;
 }
-
-.head
+a:hover
 {
-  font-size: 5px;
-  text-align: right;
+  text-decoration: underline;
 }
 
-.connexion
+header
 {
-  margin: 50xp 10xp 50xp 10xp;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+#barreht
+{
+  border: 6px solid;
+  display: flex;
+  align-items: flex-end;
+}
+
+#connexion
+{
+  width: 85px;
+  height: 20px;
   color: rgb(250, 250, 250);
   font-weight: bolder;
   background-color: blue;
 }
 
+body
+{
+  min-width: 800px;
+  border: solid;
+  border-radius: 10px;
+}
+
+#rechercher
+{
+  width: 200px;
+  height: 30px;
+  border: solid;
+  background-color: khaki;
+}
+
+.centre
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  min-width: 400px;
+  margin: auto;
+  border: solid;
+  border-radius: 10px;
+}
 .boutons
 {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid;
   background-color: silver;
+  display: flex;
 }
 
 #apprentissage
 {
+  display: flex;
+  justify-content: center;
   color: rgb(13, 0, 192);
 }
 
 footer
 {
   border: 2px solid;
-  height: 50px;
+  height: fit-content;
   background-color: silver;
+}
+#dernier
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .bas
 {
-  border: 2px solid;
-  height: 100px;
-  background-color: silver;
+  height: 50px;
+  width: 600px;
+  border: 6px solid;
+}
+
+.bas:nth-child(1)
+{
+  display: flex;
+}
+
+.bas:nth-child(2)
+{
+  justify-content: flex-end;
+  display: flex;
 }
